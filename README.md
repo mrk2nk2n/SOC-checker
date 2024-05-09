@@ -5,20 +5,22 @@ The user will be presented with multiple attack options and a list of IPs to sel
 selected attack will be saved into a log file in the /var/log directory.
 
 The script will run in 3 main phases:
-  1. Network discovery
-  2. Attack selection
-      a. ARSPOOF
-      b. DDOS
-      c. Password bruteforce
-  3. Attack execution
+1. Network discovery
+2. Attack selection
+    + ARSPOOF
+    + DDOS
+    + Password bruteforce
+3. Attack execution
 
 # Overview of Tools
 Tools used: nmap, hiping3, arpspoof, dsniff, hydra
 
-[nmap, hping3] – the nmap & hping3 tools is used to do active host discovery and port scanning.
-[arpspoof, dsniff] – the arpspoof tool is used to send forged ARP messages containing incorrect MAC address
+**[nmap, hping3]** – the nmap & hping3 tools is used to do active host discovery and port scanning.
+
+**[arpspoof, dsniff]** – the arpspoof tool is used to send forged ARP messages containing incorrect MAC address
 information and the dniff tool is used to intercept and eavesdrop on the communication.
-[hydra] – the hydra tool was used to attempt login with a list of usernames and passwords on a given service port.
+
+**[hydra]** – the hydra tool was used to attempt login with a list of usernames and passwords on a given service port.
 
 # Possible Enhancements
 
